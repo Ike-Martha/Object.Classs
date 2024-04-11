@@ -20,7 +20,7 @@ namespace ObjectClasss
         /// <summary>
         /// Display supplied text and the customerID field to the console window
         /// </summary>
-        /// <param name="Text"> Text to prefix the customer ID</param>
+        /// <param name="Text">Prefix the Customer ID</param>
         public void Display(string Text)
         {
             Console.WriteLine(Text + ": " + CustomerID);
