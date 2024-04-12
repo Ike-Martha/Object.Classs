@@ -5,77 +5,106 @@ using System.Text;
 
 namespace Object.Classs
 {
-    public class Customer2
+    public class Customer2//fields
     {
         private string _City;
-        private string _Country;
+        private string _Country = "Nigeria";
         private string _CustomerID;
         private string _CustomerName;
         private string _PostalCode;
         private string _Region;
 
         /// <param name="CustomerID">ID for the new customer</param>
-        public Customer2(string CustomerID)
+        public Customer2(string CustomerID)//Constructor
         {
-            throw new System.NotImplementedException();
+            CustomerID = CustomerID;
         }
 
-        public string CustomerID
+        public string CustomerID//properties
         {
-            get => default;
-            set
+            get
             {
+                return _CustomerID;
             }
+            
         }
 
         public string CustomerName
         {
-            get => default;
+            get
+            {
+                return _CustomerName;
+            }
             set
             {
+                _CustomerName = value;
             }
         }
 
         public string City
         {
-            get => default;
+            get 
+            {
+                return _City;
+            }
             set
             {
+                _City = value;
             }
         }
 
         public string Region
         {
-            get => default;
+            get 
+            {
+                return _Region;
+            }
             set
             {
+                _Region = value;
             }
         }
 
         public string Country
         {
-            get => default;
+            get
+            {
+                return _Country;
+            }
             set
             {
+                _Country = value;
             }
         }
 
         public string PostalCode
         {
-            get => default;
+            get
+            {
+                return _PostalCode;
+            }
             set
             {
+                _PostalCode = value;
             }
         }
 
+        //methods overloaded
         public void UpdateLocation(string NewCity, string NewRegion, string NewPostalCode)
         {
-            throw new System.NotImplementedException();
+            _City = NewCity;
+            _Region = NewRegion;
+            _PostalCode = NewPostalCode;
+
         }
 
-        public void UpdateLocation(string NewCity, string NewRegion, string NewPostalCode, string NewCountry)
+        public void UpdateLocation(string NewCity, string NewRegion,
+            string NewPostalCode, string NewCountry)
         {
-            throw new System.NotImplementedException();
+            _City = NewCity;
+            _Region = NewRegion;
+            _PostalCode = NewPostalCode;
+            _Country = NewCountry;
         }
     }
 }
