@@ -28,7 +28,7 @@ namespace ObjectClasss
 
         internal void DisplayID()
         {
-            throw new NotImplementedException();
+            //   throw new NotImplementedException();
         }
     }
 }

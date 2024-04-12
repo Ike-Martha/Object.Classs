@@ -88,6 +88,13 @@ namespace Object.Classs
                 _PostalCode = value;
             }
         }
+        public string Location
+        {
+            get
+            {
+                return string.Format($"{_City} {_Region} {_PostalCode}");
+            }
+        }
 
         //methods overloaded
         public void UpdateLocation(string NewCity, string NewRegion, string NewPostalCode)
@@ -105,6 +112,10 @@ namespace Object.Classs
             _Region = NewRegion;
             _PostalCode = NewPostalCode;
             _Country = NewCountry;
+        }
+        public string GetLocation()
+        {
+            return string.Format($"{_City} {_Region} {_PostalCode}");
         }
     }
 }
